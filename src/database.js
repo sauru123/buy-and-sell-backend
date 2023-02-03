@@ -1,10 +1,10 @@
 import mysql2 from 'mysql2';
 
 const connection = mysql2.createConnection({
-    host: 'localhost',
-    user: 'hapi-server',
-    password: 'root',
-    database: 'buy-and-sell'
+    host: 'sql12.freesqldatabase.com',
+    user: 'sql12595358',
+    password: 'GrEKsHbBqp',
+    database: 'sql12595358'
 });
 
 export const db = {
