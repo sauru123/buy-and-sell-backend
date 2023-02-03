@@ -5,7 +5,9 @@ import routes from './routes/index.js';
 import { db } from './database.js';
 //import * as admin from 'firebase-admin';
 import admin from 'firebase-admin';
-import credential from '../credentials.json' assert {type: 'json'};
+import { readFileSync } from "fs";
+const credential = JSON.parse(readFileSync('./credentials.json'));
+//import credential from '../credentials.json' assert {type: 'json'};
 
 
 admin.initializeApp({
