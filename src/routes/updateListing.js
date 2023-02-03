@@ -1,4 +1,4 @@
-import { db } from '../database';
+import { db } from '../database.js';
 import * as admin from 'firebase-admin';
 
 export const updateListingRoute = {

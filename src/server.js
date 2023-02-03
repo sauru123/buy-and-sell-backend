@@ -1,10 +1,11 @@
 import Hapi from '@hapi/hapi';
-const Path = require('path');
-const Inert = require('@hapi/inert');
-import routes from './routes';
-import { db } from './database';
-import * as admin from 'firebase-admin';
-import credential from '../credentials.json'
+// const Path = require('path');
+// const Inert = require('@hapi/inert');
+import routes from './routes/index.js';
+import { db } from './database.js';
+//import * as admin from 'firebase-admin';
+import admin from 'firebase-admin';
+import credential from '../credentials.json' assert {type: 'json'};
 
 
 admin.initializeApp({
